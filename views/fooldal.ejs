@@ -1,0 +1,31 @@
+<%- include('layout', {body: ''}) %>
+<div class="table-responsive">
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Személy neve</th>
+                <th>Azonosító</th>
+                <th>Státusz</th>
+                <th>Kapubejárat</th>
+                <th>Időpont</th>
+                <th>Irány</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% athaladasok.forEach(athaladas => { %>
+                <tr id="athaladas-<%= athaladas.id %>">
+                    <td><%= athaladas.Szemely.nev %></td>
+                    <td><%= athaladas.Szemely.azonosito %></td>
+                    <td><%= athaladas.Szemely.statusz %></td>
+                    <td><%= athaladas.Kapu.epuletbejarat %></td>
+                    <td><%= athaladas.idopont %></td>
+                    <td><%= athaladas.irany ? 'Be' : 'Ki' %></td>
+                    
+                    
+                </tr>
+                
+                <% }) %>
+                
+            </tbody>
+        </table>
+</div>

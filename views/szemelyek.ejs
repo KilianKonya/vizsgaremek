@@ -1,0 +1,36 @@
+<%- include('layout', {body: ''}) %>
+<h2>Általános adatok</h2>
+<ul class="uli">
+    <ul class="szemely-list">
+        <% szemely.forEach(sz => { %>
+            <li class="szemely-item">
+                <div class="szemely-info">
+                    <span class="id">ID: <%= sz.id %> | </span>
+                    <span class="nev">Név: <%= sz.nev %> | </span>
+                    <span class="azonosito">Azonosító: <%= sz.azonosito %> | </span>
+                    <span class="jelszo">Jelszó: <%= sz.jelszo %> | </span>
+                    <span class="statusz">Státusz: <%= sz.statusz %> | </span>
+                    <span class="osztaly">Osztály: <%= sz.osztaly %> | </span>
+                    <span class="idopont">Idő: <%= sz.idopont %></span>
+                </div>
+            </li>
+        <% }) %>
+    </ul>
+    
+
+</ul>
+
+<form action="/szemelyek" method="POST">
+    <input type="text" name="nev" placeholder="A neve" required id="szemelyeknev">
+    <input type="text" name="azonosito" placeholder="Azonosítója" required id="szemelyekazon">
+    <input type="text" name="jelszo" placeholder="Jelszava" required id="szemelyekjelszo">
+    <select id="statusz" class="lista" name="statusz">
+        <option value="Diák">Diák</option>
+        <option value="Tanár">Tanár</option>
+        <option value="Osztályfőnök">Osztályfőnök</option>
+        <option value="Igazgató">Igazgató</option>
+        <option value="Portás">Portás</option>
+    </select>
+    <input type="text" name="osztaly" placeholder="Osztálya" required id="szemelyekosztaly"> 
+    <button type="submit" id="szemelygomb">Új vendég hozzáadása</button>
+</form> 

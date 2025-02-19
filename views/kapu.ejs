@@ -1,0 +1,20 @@
+<%- include('layout', {body: ''}) %>
+<h2>Átlépett kapu</h2>
+<link rel="stylesheet" href="style.css">
+<ul class="uli2">
+    <% Kapu.forEach(kapu => { %>
+        <li><%= kapu.id %> <%= kapu.epuletbejarat %> </li>
+    <% }) %>
+</ul>
+
+<form action="/kapu" method="POST">
+
+    <select name="epuletbejarat" id="epuletbejarat" class="kapuuuu">
+        <option value="Asztrik porta">Asztrik porta</option>
+        <option value="Asztrik hátsó bejárat">Asztrik hátsó bejárat</option>
+        <option value="Martinovics porta">Martinovics porta</option>
+        <option value="tanműhely">tanműhely</option>
+        <option value="Sportcsarnok">Sportcsarnok</option>
+    </select>
+    <button type="submit" id="kapugomb">Átlépett kapu hozzáadása</button>
+</form>

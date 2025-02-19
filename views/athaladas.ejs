@@ -1,0 +1,79 @@
+<%- include('layout', {body: ''}) %>
+<div class="athaladasclass">
+
+    <h3>Áthaladások listája</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Személy neve</th>
+                <th>Azonosító</th>
+                <th>Státusz</th>
+                <th>Kapubejárat</th>
+                <th>Időpont</th>
+                <th>Irány</th>
+                <th colspan="2">Szerkesztés</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% athaladasok.forEach(athaladas => { %>
+            <tr id="athaladas-<%= athaladas.id %>">
+                <td><%= athaladas.Szemely.nev %></td>
+                <td><%= athaladas.Szemely.azonosito %></td>
+                <td><%= athaladas.Szemely.statusz %></td>
+                <td><input type="hidden" id="kapuid" name="kapuid" value="<%= athaladas.kapuid %>" />
+                    <%= athaladas.Kapu.epuletbejarat %></td>
+                <td><%= athaladas.idopont %></td>
+                <td><%= athaladas.irany ? 'Be' : 'Ki' %></td>
+                <td>
+                    <button onclick="modosit(<%= athaladas.id %>)">Módosítás</button>
+                </td>
+                
+                <td><button onclick="torol(<%= athaladas.id %>)">Törlés</button></td>
+                
+                
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
+
+<div style="margin-top: 20px;">
+    <table>
+        <thead>
+            <tr>
+            <th>Személy neve</th>
+            <th>Kapubejárat</th>
+            <th>Időpont</th>
+            <th>Irány</th>
+            <th>Áthaladás hozzáadás</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+            <td><form action="/athalado" method="POST">
+                <select name="szemely_id" id="athaladasid">
+                    <% szemelyek.forEach(szemely => { %>
+                    <option value="<%= szemely.id %>"><%= szemely.nev %></option>
+                    <% }) %>
+                </select>
+            </td>
+            <td>
+                <select name="kapu_id">
+                    <% kapuk.forEach(kapu => { %>
+                    <option  value="<%= kapu.id %>"><%= kapu.epuletbejarat %></option>
+                    <% }) %>
+                </select>
+            </td>
+            <td>
+                <input type="text" name="idopont" value="" placeholder="12:00:00" required>
+            </td>
+            <td>
+                <input type="radio" name="irany" value="true" checked id="radiobe" class="radio-container">be
+                <input type="radio" name="irany" value="false" id="radioki" class="radio-container">ki
+            </td><td>
+                <button type="submit">Új áthaladás</button></td>
+            </form></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>

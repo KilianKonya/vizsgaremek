@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+    <title>Portaszolgálat</title>
+</head>
+<body>
+    <header>
+        <h1>Portaszolgálat</h1>
+        <nav>
+
+            <div>
+                <menu>
+                    <a href="/">Főoldal</a>
+                    <% if (user) { %>
+                        <% switch (statusz) {
+                         case 'Tanár': %>
+                        <a href="/szemelyek">Személyek adatai</a>
+                        <a href="/logout">Kijelentkezés</a>
+                       <% break; 
+                       case 'Igazgató': %>
+                       <a href="/szemelyek">Személyek adatai</a>
+                        <a href="/kapu">Kapuk adatai</a>
+                        <a href="/athalado">Áthaladás adatai</a>
+                        <a href="/logout">Kijelentkezés</a>
+                        
+                       <% break; 
+                       case 'Osztályfőnök': %>
+                       <a href="/szemelyek">Személyek adatai</a>
+                       <a href="/logout">Kijelentkezés</a>
+                       <% break; 
+                       case 'Portás': %>
+                       <a href="/szemelyek">Személyek adatai</a>
+                       <a href="/athalado">Áthaladás adatai</a>
+                       <a href="/logout">Kijelentkezés</a>
+                       <% break; 
+                       default: %> 
+                       <a href="/logout">Kijelentkezés</a>
+                        <% } %>
+                    <% } else { %>
+                        <a href="/login">Bejelentkezés</a>
+                    <% } %>
+                   
+                 
+                </menu>   
+            </div>
+
+        </nav>
+    </header>
+
+   
+    <main>
+        <%- body %>
+    </main>
+</body>
+</html>

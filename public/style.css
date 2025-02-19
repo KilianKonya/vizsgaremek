@@ -1,0 +1,613 @@
+body {
+    background: linear-gradient(95deg, #FFDEE9, #B5FFFC);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.uli {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    
+}
+#kapugomb {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+#epuletbejarat {
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.uli ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .uli li {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 4px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+
+  .uli li:hover {
+    background-color: #e2e2e2;
+  }
+
+h1, h2, a {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #444;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.lista
+{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.kapuuuu
+{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF6F61;
+}
+
+button {
+    margin-top: 15px;
+    background: #FF6F61;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #FF3B2F;
+    transform: scale(1.05);
+}
+
+.active {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    color: #FF6F61;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+menu{
+    text-align: center;
+}
+#logins {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin: 30px auto 20px;
+}
+
+  #logins h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #555;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4c7bff;
+    outline: none;
+  }
+
+  button {
+    background-color: #4c7bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #4169e1;
+  }
+
+  .form-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+
+  .form-footer a {
+    color: #4c7bff;
+    text-decoration: none;
+  }
+
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+
+.szemely-list {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 50%;
+}
+
+.szemely-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 78%;
+}
+
+.szemely-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.szemely-info {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+.szemely-info span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.szemely-info .id {
+    color: #1A1A1A;
+}
+
+.szemely-info .nev {
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+.szemely-info .azonosito{
+    color: #34495E;
+}
+.szemely-info .jelszo {
+    color: #212121;
+}
+
+.szemely-info .statusz {
+    color: #7F8C8D;
+}
+
+.szemely-info .osztaly {
+    color: #9B59B6;
+}
+
+.szemely-info .idopont {
+    color: #16A085;
+}
+
+@media (max-width: 600px) {
+    .szemely-item {
+        padding: 10px;
+    }
+    .szemely-info span {
+        font-size: 12px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+#table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+tbody tr {
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#table td:nth-child(1) {
+    font-weight: 600;
+}
+
+#table td:nth-child(3) {
+    text-transform: capitalize;
+}
+
+#table td:nth-child(6) {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#szemelyeknev{
+    width: 10%;
+    margin-left: 20%;
+}
+
+#szemelyekazon{
+    width: 10%;
+
+}
+
+#szemelyekjelszo {
+    width: 10%;
+
+}
+
+#statusz {
+    width: 10%;
+
+}
+
+#szemelyekosztaly {
+    width: 10%;
+
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #4c7bff;
+    outline: none;
+}
+
+option {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: none;
+}
+
+option:hover {
+    background-color: #f1f1f1;
+    color: #4c7bff;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    background-color: #4c7bff;
+    border-color: #4c7bff;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#szemelygomb {
+    width: 250px;
+    padding: 10px 10px;
+}
+
+.uli2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .uli2 li {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    margin-bottom: 4px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+
+  .uli2 li:hover {
+    background-color: #e2e2e2;
+  }
+
+.uli2 {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    list-style-type: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+@media (max-width: 430px) {
+    .uli, .uli2 {
+        width: 100%;
+        height: auto;
+        padding: 8px;
+    }
+
+    #kapugomb, #epuletbejarat, #logins {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .lista, .kapuuuu {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .szemely-item {
+        padding: 8px;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .szemely-info span {
+        font-size: 12px;
+    }
+
+    #table td, #table th {
+        font-size: 12px;
+    }
+
+    #table td:nth-child(1), #table td:nth-child(3), #table td:nth-child(6) {
+        font-size: 12px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select,
+    button {
+        width: 100%;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .radio-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #szemelygomb {
+        width: 100%;
+    }
+    #szemelyeknev, #szemelyekazon, #szemelyekjelszo, #statusz, #szemelyekosztaly{
+        width: 40vw;
+        margin: 5px;
+    }   
+}
+
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.table-responsive{
+    width: 900px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+.athaladasclass{
+    width: 1100px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 600px) {
+    .table-responsive, .athaladasclass {
+      width: 90%;
+      display: block;
+      overflow-x: auto;
+      margin-top: 15%;
+    }
+    th, td{
+        font-size: 12px;
+        text-align: center;
+    }
+}
