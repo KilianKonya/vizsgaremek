@@ -1,31 +1,27 @@
 <%- include('layout', {body: ''}) %>
 <div class="table-responsive">
-    <table id="table">
-        <thead>
-            <tr>
-                <th>Személy neve</th>
-                <th>Azonosító</th>
-                <th>Státusz</th>
-                <th>Kapubejárat</th>
-                <th>Időpont</th>
-                <th>Irány</th>
+    <table id="table" role="table">
+        <thead role="rowgroup">
+            <tr role="row">
+                <th role="columnheader">Személy neve</th>
+                <th role="columnheader">Azonosító</th>
+                <th role="columnheader">Státusz</th>
+                <th role="columnheader">Kapubejárat</th>
+                <th role="columnheader">Időpont</th>
+                <th role="columnheader">Irány</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody role="rowgroup">
             <% athaladasok.forEach(athaladas => { %>
-                <tr id="athaladas-<%= athaladas.id %>">
-                    <td><%= athaladas.Szemely.nev %></td>
-                    <td><%= athaladas.Szemely.azonosito %></td>
-                    <td><%= athaladas.Szemely.statusz %></td>
-                    <td><%= athaladas.Kapu.epuletbejarat %></td>
-                    <td><%= athaladas.idopont %></td>
-                    <td><%= athaladas.irany ? 'Be' : 'Ki' %></td>
-                    
-                    
+                <tr id="athaladas-<%= athaladas.id %>" role="row">
+                    <td data-label="Személy neve" role="cell"><%= athaladas.Szemely.nev %></td>
+                    <td data-label="Azonosító" role="cell"><%= athaladas.Szemely.azonosito %></td>
+                    <td data-label="Státusz" role="cell"><%= athaladas.Szemely.statusz %></td>
+                    <td data-label="Kapubejárat" role="cell"><%= athaladas.Kapu.epuletbejarat %></td>
+                    <td data-label="Időpont" role="cell"><%= athaladas.idopont %></td>
+                    <td data-label="Irány" role="cell"><%= athaladas.irany ? 'Be' : 'Ki' %></td>
                 </tr>
-                
-                <% }) %>
-                
-            </tbody>
-        </table>
+            <% }) %>
+        </tbody>
+    </table>
 </div>

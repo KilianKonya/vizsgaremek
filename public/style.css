@@ -131,6 +131,7 @@ button:hover {
 
 menu{
     text-align: center;
+    width: 100%;
 }
 #logins {
   background: #ffffff;
@@ -408,8 +409,8 @@ option:hover {
 
 .radio-container {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 input[type="radio"] {
@@ -423,6 +424,7 @@ input[type="radio"] {
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     position: relative;
+    display: inline-block;
 }
 
 input[type="radio"]:checked {
@@ -480,6 +482,7 @@ input[type="radio"]:checked::before {
 
 h3 {
     text-align: center;
+    margin-top: 10px;
 }
 
 @media (max-width: 430px) {
@@ -598,16 +601,26 @@ table {
     transform: translate(-50%, -50%);
 }
 
+#kapu_id{
+    text-align: center;
+    width: 100px;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .table-responsive, .athaladasclass {
       width: 90%;
-      display: block;
+      display: inline-block;
       overflow-x: auto;
-      margin-top: 15%;
+      padding: 20px;
+      margin: auto;
+      top: 50%;
+      height: 750px;
+      margin-top: 100px;
+      position: absolute;
     }
     th, td{
         font-size: 12px;
         text-align: center;
+        display: block;
     }
 }
