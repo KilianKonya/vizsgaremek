@@ -133,6 +133,7 @@ button:hover {
 menu{
     text-align: center;
     width: 100%;
+    font-size: 18px;
 }
 #logins {
   background: #ffffff;
@@ -625,3 +626,4 @@ table {
         display: block;
     }
 }
+
