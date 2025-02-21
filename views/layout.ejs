@@ -15,34 +15,34 @@
 
             <div>
                 <menu>
-                    <a href="/">Főoldal</a>
+                    <a href="/" class="button-link">Főoldal</a>
                     <% if (user) { %>
                         <% switch (statusz) {
                          case 'Tanár': %>
-                        <a href="/szemelyek">Személyek adatai</a>
-                        <a href="/logout">Kijelentkezés</a>
+                        <a href="/szemelyek" class="button-link">Személyek adatai</a>
+                        <a href="/logout" class="button-link">Kijelentkezés</a>
                        <% break; 
                        case 'Igazgató': %>
-                       <a href="/szemelyek">Személyek adatai</a>
-                        <a href="/kapu">Kapuk adatai</a>
-                        <a href="/athalado">Áthaladás adatai</a>
-                        <a href="/logout">Kijelentkezés</a>
+                       <a href="/szemelyek" class="button-link">Személyek adatai</a>
+                        <a href="/kapu" class="button-link">Kapuk adatai</a>
+                        <a href="/athalado" class="button-link">Áthaladás adatai</a>
+                        <a href="/logout" class="button-link">Kijelentkezés</a>
                         
                        <% break; 
                        case 'Osztályfőnök': %>
-                       <a href="/szemelyek">Személyek adatai</a>
-                       <a href="/logout">Kijelentkezés</a>
+                       <a href="/szemelyek" class="button-link">Személyek adatai</a>
+                       <a href="/logout" class="button-link">Kijelentkezés</a>
                        <% break; 
                        case 'Portás': %>
-                       <a href="/szemelyek">Személyek adatai</a>
-                       <a href="/athalado">Áthaladás adatai</a>
-                       <a href="/logout">Kijelentkezés</a>
+                       <a href="/szemelyek" class="button-link">Személyek adatai</a>
+                       <a href="/athalado" class="button-link">Áthaladás adatai</a>
+                       <a href="/logout" class="button-link">Kijelentkezés</a>
                        <% break; 
                        default: %> 
-                       <a href="/logout">Kijelentkezés</a>
+                       <a href="/logout" class="button-link">Kijelentkezés</a>
                         <% } %>
                     <% } else { %>
-                        <a href="/login">Bejelentkezés</a>
+                        <a href="/login" class="button-link">Bejelentkezés</a>
                     <% } %>
                    
                  
