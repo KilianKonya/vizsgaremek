@@ -33,6 +33,7 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 20px;
   }
   
 
@@ -92,7 +93,6 @@ h2 {
     font-weight: 300;
     text-align: center;
     margin: 0;
-    margin-top: 20px;
 }
 
 a {
@@ -213,6 +213,7 @@ menu{
     padding: 0;
     margin: auto;
     width: 50%;
+    margin-bottom: 20px;
 }
 
 .szemely-item {
@@ -305,7 +306,6 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 thead {
     background-color: #4CAF50;
     color: white;
@@ -527,12 +527,12 @@ h3 {
 
     #table td, #table th {
         font-size: 12px;
+        text-align: center;
     }
 
     #table td:nth-child(1), #table td:nth-child(3), #table td:nth-child(6) {
         font-size: 12px;
     }
-
     input[type="text"],
     input[type="password"],
     select,
@@ -556,9 +556,8 @@ h3 {
     #szemelyeknev, #szemelyekazon, #szemelyekjelszo, #statusz, #szemelyekosztaly{
         width: 40vw;
         margin: 5px;
-    }   
+    }
 }
-
 
 .table-responsive {
     width: 100%;
@@ -601,7 +600,7 @@ table {
 .athaladasclass{
     width: 1100px;
     position: fixed;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -650,3 +649,11 @@ table {
     transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
+
+  /* @media all and (max-width:30em){
+    .button-link{
+    display:block;
+    margin:0.4em auto;
+    width: 50%;
+    }
+} */
