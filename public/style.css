@@ -488,7 +488,7 @@ h3 {
     margin-top: 10px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1024px) {
     .uli, .uli2 {
         width: 100%;
         height: auto;
@@ -564,7 +564,6 @@ h3 {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
 
@@ -613,7 +612,7 @@ table {
 @media screen and (max-width: 650px) {
     .table-responsive, .athaladasclass {
       width: 90%;
-      display: inline-block;
+      display: contents;
       overflow-x: auto;
       padding: 20px;
       margin: auto;

@@ -1,23 +1,21 @@
 <%- include('layout', {body: ''}) %>
 <h2>Általános adatok</h2>
 <ul class="uli">
-    <ul class="szemely-list">
-        <% szemely.forEach(sz => { %>
-            <li class="szemely-item">
-                <div class="szemely-info">
-                    <span class="id">ID: <%= sz.id %> | </span>
-                    <span class="nev">Név: <%= sz.nev %> | </span>
-                    <span class="azonosito">Azonosító: <%= sz.azonosito %> | </span>
+        <ul class="szemely-list">
+            <% szemely.forEach(sz => { %>
+                <li class="szemely-item">
+                    <div class="szemely-info">
+                        <span class="id">ID: <%= sz.id %> | </span>
+                        <span class="nev">Név: <%= sz.nev %> | </span>
+                        <span class="azonosito">Azonosító: <%= sz.azonosito %> | </span>
                     <span class="jelszo">Jelszó: <%= sz.jelszo %> | </span>
                     <span class="statusz">Státusz: <%= sz.statusz %> | </span>
                     <span class="osztaly">Osztály: <%= sz.osztaly %> | </span>
                     <span class="idopont">Idő: <%= sz.idopont %></span>
                 </div>
             </li>
-        <% }) %>
-    </ul>
-    
-
+            <% }) %>
+        </ul>
 </ul>
 
 <form action="/szemelyek" method="POST">
