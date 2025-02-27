@@ -84,7 +84,6 @@ h1, h2, a {
 h1 {
     font-size: 2.5em;
     text-transform: uppercase;
-    letter-spacing: 2px;
     text-align: center;
 }
 
@@ -250,30 +249,37 @@ menu{
 
 .szemely-info .id {
     color: #1A1A1A;
+    font-size: 14px;
 }
 
 .szemely-info .nev {
     font-weight: bold;
     color: #2C3E50;
+    font-size: 14px;
 }
 
 .szemely-info .azonosito{
     color: #34495E;
+    font-size: 14px;
 }
 .szemely-info .jelszo {
     color: #212121;
+    font-size: 14px;
 }
 
 .szemely-info .statusz {
     color: #7F8C8D;
+    font-size: 14px;
 }
 
 .szemely-info .osztaly {
     color: #9B59B6;
+    font-size: 14px;
 }
 
 .szemely-info .idopont {
     color: #16A085;
+    font-size: 14px;
 }
 
 @media (max-width: 600px) {
@@ -488,7 +494,7 @@ h3 {
     margin-top: 10px;
 }
 
-@media (max-width: 2560px) and (min-width: 350px)
+@media (max-width: 2560px) and (min-width: 320px)
 {
     .uli, .uli2 {
         width: 100%;
@@ -496,7 +502,7 @@ h3 {
         padding: 8px;
     }
 
-    #kapugomb, #epuletbejarat, #logins {
+    #kapugomb, #epuletbejarat {
         width: 90%;
         margin: 10px auto;
     }
@@ -554,8 +560,7 @@ h3 {
     }
 
     #szemelygomb {
-        width: 25vw;
-        margin-left: 35vw;
+        width: 10%;
     }
     #szemelyeknev{
         width: 10%;
@@ -662,7 +667,7 @@ table {
 .athaladasclass{
     width: 1100px;
     position: fixed;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -719,6 +724,7 @@ table {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 
+
   /* @media all and (max-width:30em){
     .button-link{
     display:block;
@@ -726,3 +732,48 @@ table {
     width: 50%;
     }
 } */
+
+@media (max-width: 964px){
+    #szemelyeknev{
+        width: 130px;
+        margin-left: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #szemelyekazon{
+        width: 130px;
+        margin-left: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #szemelyekjelszo{
+        width: 130px;
+        margin-left: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #statusz{
+        width: 130px;
+        margin-left: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #szemelyekosztaly{
+        width: 130px;
+        margin-left: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #szemelygomb{
+        width: 130px;
+        margin-left: 40vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
