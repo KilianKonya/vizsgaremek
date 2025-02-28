@@ -4,6 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-attachment: fixed;
 }
 
 .uli {
@@ -638,8 +639,8 @@ h3 {
 
 .table-responsive{
     width: 900px;
-    position: fixed;
-    top: 25%;
+    position: relative;
+    top: 130px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -665,9 +666,9 @@ table {
   }
   
 .athaladasclass{
-    width: 1100px;
-    position: fixed;
-    top: 45%;
+    width: 60%;
+    position: relative;
+    top: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -677,7 +678,7 @@ table {
     width: 100px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 740px) {
     .table-responsive, .athaladasclass {
       width: 90%;
       display: contents;
@@ -702,7 +703,14 @@ table {
         margin-bottom: 15px;
     }
 }
-
+@media screen and (max-width: 1700px){
+    .athaladasclass{
+        width: 100%;
+    }
+    .table-responsive{
+        width: 100%;
+    }
+}
 
 .button-link {
     display: inline-block;
