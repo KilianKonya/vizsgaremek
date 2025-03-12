@@ -1,6 +1,9 @@
 body {
-    background: rgb(117,113,184);
-    background: linear-gradient(90deg, rgba(117,113,184,1) 0%, rgba(209,164,219,1) 49%, rgba(127,159,205,0.9976365546218487) 100%);
+    background: url(https://www.shutterstock.com/image-photo/office-room-blank-computer-displaytablechaircement-600nw-1574725129.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(90deg, rgba(117,113,184,1) 0%, rgba(209,164,219,1) 49%, rgba(127,159,205,0.9976365546218487) 100%); */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,13 +13,11 @@ body {
 .uli {
     border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 250px;
-    
 }
 #kapugomb {
     width: 200px;
@@ -29,6 +30,7 @@ body {
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
+    background-color: cornsilk;
 }
 .uli ul {
     list-style-type: none;
@@ -42,7 +44,7 @@ body {
     padding: 8px 16px;
     border: 1px solid #ccc;
     margin-bottom: 4px;
-    background-color: #f9f9f9;
+    background-color: cornsilk;
     border-radius: 4px;
   }
   
@@ -54,7 +56,7 @@ body {
 h1, h2, a {
     margin-bottom: 10px;
     padding-left: 15px;
-    color: #444;
+    color: white;
     font-family: 'Helvetica Neue', sans-serif;
 }
 
@@ -106,7 +108,7 @@ a:hover {
 
 button {
     margin-top: 15px;
-    background: #FF6F61;
+    /* background: #FF6F61; */
     border: none;
     border-radius: 20px;
     color: #fff;
@@ -118,7 +120,7 @@ button {
 }
 
 button:hover {
-    background: #FF3B2F;
+    /* background: #FF3B2F; */
     transform: scale(1.05);
 }
 
@@ -167,7 +169,7 @@ menu{
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
-    background-color: #f9f9f9;
+    background-color: cornsilk;
     transition: border-color 0.3s ease-in-out;
   }
 
@@ -178,7 +180,7 @@ menu{
   }
 
   button {
-    background-color: #4c7bff;
+    background-color: forestgreen;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -190,7 +192,7 @@ menu{
   }
 
   button:hover {
-    background-color: #4169e1;
+    /* background-color: #4169e1; */
   }
 
   .form-footer {
@@ -314,7 +316,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 thead {
-    background-color: #4CAF50;
+    background-color: #242124;
     color: white;
 }
 
@@ -340,6 +342,7 @@ tbody td {
     text-align: center;
     border-bottom: 1px solid #ddd;
     font-size: 14px;
+    background-color: cornsilk;
 }
 
 tbody tr:hover {
@@ -380,6 +383,7 @@ tbody tr:last-child td {
 
 #statusz {
     width: 10%;
+    background-color: cornsilk;
 
 }
 
@@ -391,7 +395,7 @@ tbody tr:last-child td {
 select {
     width: 200px;
     padding: 10px;
-    background-color: #fff;
+    background-color: cornsilk;
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
@@ -400,7 +404,7 @@ select {
 }
 
 select:focus {
-    border-color: #4c7bff;
+    border-color: forestgreen;
     outline: none;
 }
 
@@ -408,7 +412,7 @@ option {
     padding: 10px;
     font-size: 16px;
     color: #333;
-    background-color: #fff;
+    background-color: cornsilk;
     border: none;
 }
 
@@ -438,8 +442,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    background-color: #4c7bff;
-    border-color: #4c7bff;
+    background-color: forestgreen;
+    border-color: forestgreen;
 }
 
 input[type="radio"]:checked::before {
@@ -469,7 +473,7 @@ input[type="radio"]:checked::before {
     padding: 8px 16px;
     border: 1px solid #ccc;
     margin-bottom: 4px;
-    background-color: #f9f9f9;
+    background-color: cornsilk;
     border-radius: 4px;
   }
   
@@ -718,7 +722,7 @@ table {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #242124;
     color: white;
     border: 2px solid #4CAF50;
     border-radius: 5px;
@@ -785,3 +789,4 @@ table {
         gap: 10px;
     }
 }
+
