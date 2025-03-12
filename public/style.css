@@ -326,6 +326,7 @@ thead th {
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
+    border: 1px solid forestgreen;
 }
 
 tbody tr {
@@ -343,6 +344,7 @@ tbody td {
     border-bottom: 1px solid #ddd;
     font-size: 14px;
     background-color: cornsilk;
+    border: 1px solid forestgreen;
 }
 
 tbody tr:hover {
@@ -542,6 +544,7 @@ h3 {
     #table td, #table th {
         font-size: 14px;
         text-align: center;
+        border: 1px solid forestgreen;
     }
 
     #table td:nth-child(1), #table td:nth-child(3), #table td:nth-child(6) {
