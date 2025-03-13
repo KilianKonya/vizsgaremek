@@ -25,7 +25,7 @@
                 <td><%= athaladas.idopont %></td>
                 <td><%= athaladas.irany ? 'Be' : 'Ki' %></td>
                 <td>
-                    <button onclick="modosit(<%= athaladas.id %>)">Módosítás</button>
+                    <button onclick="modosit(<%= athaladas.id %>)" id="modositasgomb">Módosítás</button>
                 </td>
                 
                 <td><button onclick="torol(<%= athaladas.id %>)" id="torles">Törlés</button></td>
@@ -70,7 +70,7 @@
                 <input type="radio" name="irany" value="true" checked id="radiobe" class="radio-container">be
                 <input type="radio" name="irany" value="false" id="radioki" class="radio-container">ki
             </td><td>
-                <button type="submit">Új áthaladás</button></td>
+                <button type="submit" id="submitbutton">Új áthaladás</button></td>
             </form></td>
         </tr>
     </tbody>
