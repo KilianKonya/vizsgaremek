@@ -257,6 +257,7 @@ menu{
 .szemely-info .id {
     color: #1A1A1A;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .szemely-info .nev {
@@ -268,25 +269,30 @@ menu{
 .szemely-info .azonosito{
     color: #34495E;
     font-size: 14px;
+    font-weight: bold;
 }
 .szemely-info .jelszo {
     color: #212121;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .szemely-info .statusz {
     color: #7F8C8D;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .szemely-info .osztaly {
     color: #9B59B6;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .szemely-info .idopont {
     color: #16A085;
     font-size: 14px;
+    font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -482,6 +488,7 @@ input[type="radio"]:checked::before {
     margin-bottom: 4px;
     background-color: cornsilk;
     border-radius: 10px;
+    font-weight: bold;
   }
   
 
