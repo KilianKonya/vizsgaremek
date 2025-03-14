@@ -23,7 +23,7 @@ body {
     width: 200px;
     display: block;
     margin: auto;
-    border: 2px solid black;
+border: 3px solid #275d0f;
     border-radius: 10px;
 }
 #epuletbejarat {
@@ -33,7 +33,7 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: cornsilk;
-    border: 2px solid black;
+border: 3px solid #275d0f;
     border-radius: 10px;
 }
 .uli ul {
@@ -69,7 +69,7 @@ h1, h2, a {
     width: 90%;
     padding: 10px;
     margin: 10px 0 20px;
-    border: 2px solid black;
+border: 3px solid #275d0f;
     border-radius: 8px;
     font-size: 16px;
     background-color: #f9f9f9;
@@ -112,6 +112,7 @@ a:hover {
 
 button {
     margin-top: 15px;
+    background-color: forestgreen;
     /* background: #FF6F61; */
     border: none;
     border-radius: 20px;
@@ -170,7 +171,7 @@ menu{
     width: 90%;
     padding: 10px;
     margin: 10px 0 20px;
-    border: 2px solid black;
+border: 3px solid #275d0f;
     border-radius: 8px;
     font-size: 16px;
     background-color: cornsilk;
@@ -184,8 +185,6 @@ menu{
   }
 
   button {
-    background-color: forestgreen;
-    color: white;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
@@ -408,7 +407,7 @@ select {
     width: 200px;
     padding: 10px;
     background-color: cornsilk;
-    border: 2px solid black;
+border: 3px solid #275d0f;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
@@ -472,7 +471,7 @@ input[type="radio"]:checked::before {
 #szemelygomb {
     width: 250px;
     padding: 10px 10px;
-    border: 2px solid black;
+border: 3px solid #275d0f;
 }
 
 .uli2 ul {
@@ -811,18 +810,20 @@ table {
 
 #torles{
     background-color: crimson;
-    border: 2px solid black;
+    border: 3px solid #a91717;
     border-radius: 10px;
 }
 
 #modositasgomb{
-    border: 2px solid black;
+border: 3px solid #275d0f;
     border-radius: 10px;
+    background-color: forestgreen;
 }
 
 #submitbutton{
-    border: 2px solid black;
+border: 3px solid #275d0f;
     border-radius: 10px;
+    background-color: forestgreen;
 }
 
 
@@ -830,4 +831,10 @@ table {
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#mentesgomb, #megsegomb{
+border: 3px solid #275d0f;
+    border-radius: 10px;
+    background-color: forestgreen;
 }

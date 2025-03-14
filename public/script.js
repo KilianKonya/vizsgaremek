@@ -91,8 +91,8 @@ function modosit(id)
             }
     
             cells[cells.length - 1].innerHTML = `
-                <button onclick="mentes(${id})">Mentés</button>
-                <button onclick="visszavonas(${id})">Mégse</button>
+                <button onclick="mentes(${id})" id="mentesgomb">Mentés</button>
+                <button onclick="visszavonas(${id})" id="megsegomb">Mégse</button>
             `;
         }
 
@@ -148,8 +148,8 @@ function mentes(id)
             <td>${data.Kapu.epuletbejarat}</td>
             <td>${data.idopont}</td>
             <td>${data.irany ? 'Be' : 'Ki'}</td>
-            <td><button onclick="modosit(${id})">Módosítás</button></td>
-            <td><button onclick="torol(${id})">Törlés</button></td>
+            <td><button onclick="modosit(${id})" id="modositasgomb">Módosítás</button></td>
+            <td><button onclick="torol(${id})" id="torles">Törlés</button></td>
         `;
         delete row.dataset.editing;
     }
